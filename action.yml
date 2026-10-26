@@ -1,0 +1,16 @@
+name: "Sitemap Analyzer by PromoPilot"
+description: "Validate a site's XML sitemaps and fail on protocol errors or broken URLs."
+author: "Alexandr Krikun"
+branding:
+  icon: "map"
+  color: "purple"
+inputs:
+  args:
+    description: "Arguments passed to the sitemap-analyzer CLI, e.g. \"example.com\""
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Run sitemap-analyzer
+      shell: bash
+      run: node "$GITHUB_ACTION_PATH/bin/cli.js" ${{ inputs.args }}

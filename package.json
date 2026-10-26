@@ -1,0 +1,55 @@
+{
+  "name": "@promopilot/sitemap-analyzer",
+  "version": "1.0.0",
+  "description": "Validate XML sitemaps from the command line: discovery via robots.txt, sitemap indexes, .xml.gz, protocol limits (50,000 URLs / 50 MB), lastmod, priority, changefreq, foreign hosts, duplicates and optional status checks of listed URLs. Zero-dependency Node.js CLI, library and GitHub Action. Free online version by PromoPilot.",
+  "keywords": [
+    "sitemap",
+    "sitemap-xml",
+    "xml-sitemap",
+    "sitemap-validator",
+    "sitemap-analyzer",
+    "seo",
+    "technical-seo",
+    "crawler",
+    "search-console",
+    "seo-tools",
+    "cli",
+    "nodejs",
+    "github-action",
+    "promopilot"
+  ],
+  "homepage": "https://promopilot.link/en/tools/sitemap-analyzer.php?utm_source=github&utm_medium=repo&utm_campaign=tools&utm_content=sitemap-analyzer",
+  "bugs": {
+    "url": "https://github.com/ksanyok/sitemap-analyzer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksanyok/sitemap-analyzer.git"
+  },
+  "license": "MIT",
+  "author": "Alexandr Krikun (https://github.com/ksanyok)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "sitemap-analyzer": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
